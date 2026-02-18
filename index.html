@@ -191,7 +191,7 @@ a:active {
         <h4 style="margin:auto;">WISP Server</h4>
         <br>
         <form style="margin:auto;"id="wispInput">
-          <input id="websocket" type="text" placeholder="wss://gointospace.app/wisp/" value="wss://gointospace.app/wisp/">
+          <input id="websocket" type="text" placeholder="wss://wisp.mercurywork.shop" value="wss://wisp.mercurywork.shop">
           <button type="submit">Set WISP</button>
         </form>
       <br>
@@ -352,7 +352,7 @@ a:active {
 
     function getWispUrl() {
       const wisp = document.getElementById("websocket").value.trim();
-      const defaultWisp = "wss://gointospace.app/wisp/";
+      const defaultWisp = "wss://wisp.mercurywork.shop";
       return wisp || defaultWisp;
     }
 
@@ -401,7 +401,7 @@ a:active {
       return template.replace("%s", encodeURIComponent(input));
     }
 
-    const currentWisp = localStorage.getItem('selectedWisp') || "wss://gointospace.app/wisp/";
+    const currentWisp = localStorage.getItem('selectedWisp') || "wss://wisp.mercurywork.shop";
     const currentTransport = localStorage.getItem('selectedTransport') || "epoxy";
     const currentTheme = localStorage.getItem('selectedTheme') || "default";
     const currentSearchEngine = localStorage.getItem('selectedSearchEngine') || "brave";
